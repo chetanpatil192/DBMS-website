@@ -1,0 +1,17 @@
+# ==============================================================================
+# Development, Testing, and Linting Dependencies
+# ==============================================================================
+
+# Testing Framework & Async Support
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
+
+# HTTP Test Client for FastAPI
+httpx>=0.27.0
+
+# Code Formatting and Linting
+ruff>=0.6.0
+
+# Static Type Checking
+mypy>=1.11.0
+types-requests>=2.32.0

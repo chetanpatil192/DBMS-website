@@ -1,0 +1,12 @@
+"""API v1 Router aggregating all domain and analytics endpoints."""
+
+from fastapi import APIRouter
+
+from app.api.v1.endpoints import analytics, customers, health
+
+api_v1_router = APIRouter()
+
+# Register endpoint routers
+api_v1_router.include_router(health.router)
+api_v1_router.include_router(analytics.router)
+api_v1_router.include_router(customers.router)

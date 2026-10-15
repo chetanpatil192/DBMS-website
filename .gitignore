@@ -1,0 +1,78 @@
+# ==============================================================================
+# Git Ignore - Commerce Insights
+# ==============================================================================
+
+# Operating System & IDE Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment Variables & Secrets (CRITICAL: Never commit local credentials)
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
+
+# Python & Backend Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python Testing & Type Checking
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Node & Frontend Artifacts
+node_modules/
+frontend/dist/
+frontend/build/
+.vite/
+coverage/
+*.tsbuildinfo
+
+# Logs & Diagnostics
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Data Generation & Benchmark Dumps
+data/
+*.csv
+*.parquet
+*.json.gz
+*.dump
+scripts/output/
